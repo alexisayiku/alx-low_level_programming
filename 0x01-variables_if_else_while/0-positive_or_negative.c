@@ -14,10 +14,10 @@ srand(time(0)); /* Initialize random seed */
 int n = rand(); /* Generate a random number */
 printf("The number %d is ", n);
 if (n > 0)
-printf("positive\n");
+printf(" %d is positive\n");
 else if (n == 0)
-printf("zero\n");
+printf(" %d is zero\n");
 else
-printf("negative\n");
+printf(" %d is negative\n");
 return (0);
 }
