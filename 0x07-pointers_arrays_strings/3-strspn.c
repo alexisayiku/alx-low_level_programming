@@ -1,23 +1,22 @@
-#include "holberton.h"
+#include <main.h>
 /**
-* _strspn - prints the consecutive caracters of s1 that are in s2.
-* @s: source string
-* @accept: searching string
-*
-* Return: new string.
+Calculate the length of the input strings
+The value of i is the length of the prefix substring
+Compare characters of the prefix and input string until a mismatch or the end of the prefix is reached
 */
-unsigned int _strspn(char *s, char *accept)
-{
-unsigned int i, j;
-for (j = 0; *(s + j); j++)
-{
-for (i = 0; *(accept + i); i++)
-{
-if (*(s + j) == *(accept + i))
-break;
+size_t prefix_length(const char *str, const char *prefix) {
+size_t str_len = 0;
+size_t prefix_len = 0;
+while (str[str_len] != '\0') {
+str_len++;
 }
-if (*(accept + i) == '\0')
-break;
+while (prefix[prefix_len] != '\0') {
+prefix_len++;
 }
-return (j);
+size_t i = 0;
+while (i < str_len && i < prefix_len && str[i] == prefix[i]) 
+{
+i++;
+}
+return i; 
 }
