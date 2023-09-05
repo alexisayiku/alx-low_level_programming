@@ -1,25 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include <ctype.h>
 /**
-*main - execution of addition o two numbers.
-*@argc: argument count or the size of arguments.
-*@argv: argument vector
-*Return: 1 for less of 2 arguments or nondigit numbers, 0 success
+* main - execution of thr addition of two numbers.
+* @argc: argument count or size of arguments.
+* @argv: argument vector 
+* Return: 1 for less of 2 arguments or nondigit numbers, 0 success
 */
 int main(int argc, char **argv)
 {
-int sum, a, b;
+int sum, i, j;
 sum = 0;
-for (a = 1; a < argc; a++)
+for (i = 1; i < argc; i++)
 {
-for (b = 0; argv[a][b] != '\0'; b++)
+for (j = 0; argv[i][j] != '\0'; j++)
 {
-if (!isdigit(argv[a][b]))
+if (!isdigit(argv[i][j]))
 {
 printf("Error\n");
 return (1);
 }
 }
-sum += atoi(argv[a]);
+sum += atoi(argv[i]);
 }
 printf("%d\n", sum);
 return (0);
