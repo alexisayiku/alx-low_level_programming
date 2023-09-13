@@ -1,7 +1,8 @@
+#include <stdio.h>
 #include <stdlib.h>
 #include "3-calc.h"
 /**
-* get_op_func - this compares the struct and proceed to operates.
+* get_op_func - compares the struct and proceed to operates.
 * @s: operator string.
 * Return: result.
 */
