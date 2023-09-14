@@ -1,8 +1,8 @@
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
-*sum_them_all - this sum all.
-*@n: a given number.
+*sum_them_all -this is where the summation is executed.
+*@n: given number.
 *Return: the sum.
 */
 int sum_them_all(const unsigned int n, ...)
